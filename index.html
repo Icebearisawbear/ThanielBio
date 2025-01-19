@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+  .therestofthebody {
+    font-family: 'Roboto' , sans-serif;
+  }
+  .title {
+    font-family: 'Roboto' , sans-serif;
+    color: white;
+  }
+</style>
+  <title>
+    Thaniel's Bio
+  </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="container" style="background-color: black; color: #bb00ff;">
+<h1 class="title">
+  <center>
+  Thaniel Bio
+  </center>
+</h1>
+<hr>
+
+  <h4 class="therestofthebody" style="color: #9d9b9b; letter-spacing: 1px;">
+    Hi, I’m Nathaniel Lyons. I’ve always been passionate about video games and find joy in exploring new games, strategies, and challenges. Gaming is more than just a hobby for me—it’s a way to connect with others, immerse myself in different worlds, and test my skills. Outside of gaming, I also play baseball, a sport that has taught me a lot about teamwork, dedication, and discipline. Whether I’m at the plate or out in the field, I always strive to give my best and push myself to improve.
+    Looking ahead, I’m excited to pursue a degree in computer science. Technology has always fascinated me, and I want to dive deeper into how it works and how I can contribute to shaping the future of the field. Whether it’s through coding, building innovative software, or solving complex problems, I’m eager to apply my skills and creativity in the world of tech.
+    In everything I do, I’m driven by the desire to learn, grow, and challenge myself, whether it’s through sports, gaming, or academics.
+  </h4>
+<hr>
+<h2><center>
+<a href="https://icebearisawbear.github.io/WBB/" class="button" style="font-family: 'Roboto', sans-serif;">Return back to the main page!</a></h2></center>
+  
+  <p><pre align = "center" style = "color: white;"> &copy Highschool DXD 2024 </pre></p>
+
+  <script>
+      (function() {
+          document.addEventListener("mousemove", parallax);
+          const elem = document.querySelector("#container");
+
+          function parallax(e) {
+              let _w = window.innerWidth/2;
+              let _h = window.innerHeight/2;
+              let _mouseX = e.clientX;
+              let _mouseY = e.clientY;
+              let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+              let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+              let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+              let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+              elem.style.backgroundPosition = x;
+          }
+      })();
+  </script>
+
+</body>
+
+</html>
